@@ -24,6 +24,10 @@
     <include>
       <directory>./src</directory>
     </include>
+    <exclude>
+      <directory>./src/Infrastructure</directory>
+      <directory>./src/Entity</directory>
+    </exclude>
   </coverage>
 
   <testsuites>

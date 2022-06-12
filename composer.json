@@ -1,6 +1,6 @@
 {
-  "name": "eureka/component-template",
-  "description": "Template for new component & domain",
+  "name": "eureka/domain-page",
+  "description": "Domain to manage dynamics page on web projet.",
   "type": "library",
   "minimum-stability": "stable",
   "license": "MIT",
@@ -14,12 +14,12 @@
 
   "autoload": {
     "psr-4": {
-      "Eureka\\Component\\Template\\": "./src"
+      "Eureka\\Domain\\Page\\": "./src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Eureka\\Component\\Template\\Tests\\": "./tests"
+      "Eureka\\Domain\\Page\\Tests\\": "./tests"
     }
   },
 
@@ -31,10 +31,17 @@
   },
 
   "require": {
-    "php": "7.4.*|8.0.*|8.1.*"
+    "php": "7.4.*|8.0.*|8.1.*",
+
+    "eureka/component-database": "^3.1",
+    "eureka/component-orm": "^5.2",
+    "eureka/component-validation": "^5.1"
   },
 
   "require-dev": {
+    "eureka/kernel-console": "^5.0",
+    "eureka/component-console": "^5.1",
+
     "dealerdirect/phpcodesniffer-composer-installer": "^v0.7",
     "phpstan/phpstan": "^1.7",
     "phpunit/phpcov": "^8.2",

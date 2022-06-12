@@ -9,13 +9,15 @@
 
 declare(strict_types=1);
 
-namespace Eureka\Component\Template;
+namespace Eureka\Domain\Page\Repository;
+
+use Eureka\Component\Orm\RepositoryInterface;
 
 /**
- * DataMapper Data abstract class.
+ * Page repository interface.
  *
- * @author Romain Cottard
+ * @author Eureka Orm Generator
  */
-class DummySrc
+interface PageRepositoryInterface extends RepositoryInterface
 {
 }

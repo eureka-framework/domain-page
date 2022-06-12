@@ -4,7 +4,7 @@ composer.lock
 /vendor/
 
 #~ Tests
-/build/*
+/build/
 .phpunit.result.cache
 
 #~ Misc
@@ -13,3 +13,7 @@ composer.lock
 #~ Overridden condigs
 phpstan.neon
 phpunit.xml
+
+#~ Symfony
+/var/
+/config/packages/secrets.yaml

@@ -1,5 +1,5 @@
-# component-template
-Template for new component & domain
+# domain-page
+ Domain to manage dynamics page on web projet.
 
 
 ## Testing & CI (Continuous Integration)

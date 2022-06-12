@@ -6,21 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ```
 ## [tag] - YYYY-MM-DD
-[tag]: https://github.com/eureka-framework/component-console/compare/1.0.0...master
+[tag]: https://github.com/eureka-framework/domain-page/compare/1.0.0...master
 ### Changed
- * Change 1
+ - Change 1
 ### Added
- * Added 1
+ - Added 1
 ### Removed
- * Remove 1
+ - Remove 1
 ```
 
 ----
 
-## [1.0.0] - 2022-06-12
+## [1.0.0] - 2022-06
 ### Added
- - Add phpstan for static analyze & php compatibility
- - Add Check compatibility with PHP 7.4 & 8.1 in CI
- - Add Makefile & .dist files for CI
- - Add Dummy Source & Dummy Test
- - Add GitHub CI file & sonar project file
+ -
