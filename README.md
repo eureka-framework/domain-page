@@ -1,4 +1,11 @@
 # domain-page
+[![Current version](https://img.shields.io/packagist/v/eureka/domain-page.svg?logo=composer)](https://packagist.org/packages/eureka/domain-page)
+[![Supported PHP version](https://img.shields.io/static/v1?logo=php&label=PHP&message=7.4|8.0|8.1&color=777bb4)](https://packagist.org/packages/eureka/domain-page)
+![CI](https://github.com/eureka-framework/domain-page/workflows/CI/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eureka-framework_domain-page&metric=alert_status)](https://sonarcloud.io/dashboard?id=eureka-framework_domain-page)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=eureka-framework_domain-page&metric=coverage)](https://sonarcloud.io/dashboard?id=eureka-framework_domain-page)
+
+
  Domain to manage dynamics page on web projet.
 
 
