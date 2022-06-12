@@ -18,7 +18,7 @@ namespace Eureka\Domain\Page\Enum;
  */
 class PageStatus
 {
-   public const DISABLED = 0;
-   public const DRAFT = 1;
-   public const PUBLISHED = 2;
+    public const DISABLED = 0;
+    public const DRAFT = 1;
+    public const PUBLISHED = 2;
 }
