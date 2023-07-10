@@ -31,21 +31,21 @@
   },
 
   "require": {
-    "php": "7.4.*|8.0.*|8.1.*",
+    "php": "8.1.*||8.2.*",
 
-    "eureka/component-database": "^3.1",
-    "eureka/component-orm": "^5.2",
-    "eureka/component-validation": "^5.1"
+    "eureka/component-database": "^3.2",
+    "eureka/component-orm": "^5.4",
+    "eureka/component-validation": "^5.2"
   },
 
   "require-dev": {
-    "eureka/kernel-console": "^5.0",
-    "eureka/component-console": "^5.1",
+    "eureka/kernel-console": "^5.2",
+    "eureka/component-console": "^5.3",
 
-    "dealerdirect/phpcodesniffer-composer-installer": "^v0.7",
-    "phpstan/phpstan": "^1.7",
-    "phpunit/phpcov": "^8.2",
-    "phpunit/phpunit": "^9.5",
-    "squizlabs/php_codesniffer": "^3.6"
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "phpstan/phpstan": "^1.10",
+    "phpunit/phpcov": "^9.0",
+    "phpunit/phpunit": "^10.2",
+    "squizlabs/php_codesniffer": "^3.7"
   }
 }

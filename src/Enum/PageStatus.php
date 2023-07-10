@@ -11,14 +11,9 @@ declare(strict_types=1);
 
 namespace Eureka\Domain\Page\Enum;
 
-/**
- * Page Status Enum.
- *
- * @author Romain Cottard
- */
-class PageStatus
+enum PageStatus: int
 {
-    public const DISABLED = 0;
-    public const DRAFT = 1;
-    public const PUBLISHED = 2;
+    case Disabled = 0;
+    case Draft = 1;
+    case Published = 2;
 }

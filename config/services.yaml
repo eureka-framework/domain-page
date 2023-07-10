@@ -3,11 +3,11 @@ parameters:
 
 
 services:
-    # default configuration for services in *this* file
-    _defaults:
-        autowire: true
-        autoconfigure: true
-        public: false
+  # default configuration for services in *this* file
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
 
-    Eureka\Domain\:
-        resource: '../src/*'
+  Eureka\Domain\Page\:
+    resource: '../src/*'

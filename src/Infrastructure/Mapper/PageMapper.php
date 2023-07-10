@@ -35,7 +35,7 @@ class PageMapper extends Abstracts\AbstractPageMapper implements PageRepositoryI
     public function findPublishedPageBySlug(string $slug): Page
     {
         /** @var Page $page */
-        $page = $this->findByKeys(['page_slug' => $slug, 'page_status' => PageStatus::PUBLISHED]);
+        $page = $this->findByKeys(['page_slug' => $slug, 'page_status' => PageStatus::Published->value]);
 
         return $page;
     }

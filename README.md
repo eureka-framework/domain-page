@@ -1,6 +1,6 @@
 # domain-page
 [![Current version](https://img.shields.io/packagist/v/eureka/domain-page.svg?logo=composer)](https://packagist.org/packages/eureka/domain-page)
-[![Supported PHP version](https://img.shields.io/static/v1?logo=php&label=PHP&message=7.4|8.0|8.1&color=777bb4)](https://packagist.org/packages/eureka/domain-page)
+[![Supported PHP version](https://img.shields.io/static/v1?logo=php&label=PHP&message=8.1%20-%208.2&color=777bb4)](https://packagist.org/packages/eureka/domain-page)
 ![CI](https://github.com/eureka-framework/domain-page/workflows/CI/badge.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eureka-framework_domain-page&metric=alert_status)](https://sonarcloud.io/dashboard?id=eureka-framework_domain-page)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=eureka-framework_domain-page&metric=coverage)](https://sonarcloud.io/dashboard?id=eureka-framework_domain-page)
@@ -9,44 +9,74 @@
  Domain to manage dynamics page on web projet.
 
 
-## Testing & CI (Continuous Integration)
-
-You can run tests on your side with following commands:
-```bash
-make tests   # run tests with coverage
-make testdox # run tests without coverage reports but with prettified output
-```
-
-You also can run code style check or code style fixes with following commands:
-```bash
-make phpcs   # run checks on check style
-make phpcbf  # run check style auto fix
-```
-
-To perform a static analyze of your code (with phpstan, lvl 9 at default), you can use the following command:
-```bash
-make phpstan
-make analyze # Same as phpstan but with CLI output as table
-```
-
-To ensure you code still compatible with current supported version and futures versions of php, you need to
-run the following commands (both are required for full support):
-```bash
-make php74compatibility # run compatibility check on current minimal version of php we support
-make php81compatibility # run compatibility check on last version of php we will support in future
-```
-
-And the last "helper" commands, you can run before commit and push is:
-```bash
-make ci
-```
-This command clean the previous reports, install component if needed and run tests (with coverage report),
-check the code style and check the php compatibility check, as it would be done in our CI.
-
 ## Contributing
 
 See the [CONTRIBUTING](CONTRIBUTING.md) file.
 
+
+### Install / update project
+
+You can install project with the following command:
+```bash
+make install
+```
+
+And update with the following command:
+```bash
+make update
+```
+
+NB: For the components, the `composer.lock` file is not committed.
+
+### Testing & CI (Continuous Integration)
+
+#### Tests
+You can run tests (with coverage) on your side with following command:
+```bash
+make tests
+```
+
+For prettier output (but without coverage), you can use the following command:
+```bash
+make testdox # run tests without coverage reports but with prettified output
+```
+
+#### Code Style
+You also can run code style check with following commands:
+```bash
+make phpcs
+```
+
+You also can run code style fixes with following commands:
+```bash
+make phpcbf
+```
+
+#### Static Analysis
+To perform a static analyze of your code (with phpstan, lvl 9 at default), you can use the following command:
+```bash
+make phpstan
+```
+
+To ensure you code still compatible with current supported version at Deezer and futures versions of php, you need to
+run the following commands (both are required for full support):
+
+Minimal supported version:
+```bash
+make php81compatibility
+```
+
+Maximal supported version:
+```bash
+make php82compatibility
+```
+
+#### CI Simulation
+And the last "helper" commands, you can run before commit and push, is:
+```bash
+make ci  
+```
+
 ## License
 
-This project is currently under The MIT License (MIT). See [LICENCE](LICENSE) file for more information.
+This project is currently **proprietary** and should NOT be used outside Deezer
