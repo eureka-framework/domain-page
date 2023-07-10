@@ -1,15 +1,14 @@
 parameters:
 
-    #~ Debug
-    kernel.debug:           true
-    kernel.environment:     'dev'
-    kernel.error.display:   'false'
-    kernel.error.reporting: !php/const E_ALL
+  #~ Debug
+  kernel.debug: true
+  kernel.environment: 'dev'
+  kernel.error.display: 'false'
+  kernel.error.reporting: !php/const E_ALL
 
-    #~ Directories
-    kernel.directory.root:   '..' # Overridden in Kernel class, but define here as helper
-    kernel.directory.cache:  '../var/cache'
-    kernel.directory.log:    '../var/log'
-    kernel.directory.config: '../config'
-    kernel.directory.vendor: '../vendor'
-
+  #~ Directories
+  kernel.directory.root: '..' # Overridden in Kernel class, but define here as helper
+  kernel.directory.cache: '../var/cache'
+  kernel.directory.log: '../var/log'
+  kernel.directory.config: '../config'
+  kernel.directory.vendor: '../vendor'

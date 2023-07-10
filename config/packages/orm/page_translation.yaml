@@ -1,7 +1,7 @@
 # ORM Config file
 parameters:
 
-  orm.config.page:
+  orm.config.page_translation:
     comment:
       author: '%orm.comment.author%'
       copyright: '%orm.comment.copyright%'
@@ -17,14 +17,14 @@ parameters:
       repository: '%orm.base_path.repository%/Repository'
 
     cache:
-      prefix: '%orm.cache.prefix%page'
+      prefix: '%orm.cache.prefix%page_translation'
 
     database:
-      table: 'page'
-      prefix: 'page'
+      table: 'page_translation'
+      prefix: 'page_translation'
 
     class:
-      classname: 'Page'
+      classname: 'PageTranslation'
 
     joins: [ ]
 
